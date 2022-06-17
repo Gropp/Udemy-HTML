@@ -30,6 +30,10 @@ img {
     max-width: 1000px;
 }
 
+.logo, .capa {
+    margin: 30px;
+}
+
 header {
     max-width: 600px;
 }
@@ -37,6 +41,7 @@ header {
 header h2 {
     color: #9e2b1d;
     font-size: 40px;
+    margin-top: -20px;
 }
 
 header h3 {
@@ -187,4 +192,30 @@ footer div {
 .redesSociais li {
     display: inline-block;
     padding: 0 15px;
+}
+
+@media (max-width:900px) {
+    body {
+        background: url("../images/bg-900.jpg") top right no-repeat;
+    }
+}
+
+@media (max-width:750px) {
+    body {
+        background: url("../images/bg-750.jpg") top right no-repeat;
+    }
+}
+
+@media (max-width:690px) {
+    body {
+       background-image: none;
+       background-color: #dee5ec; 
+    }
+    .fundoTopo{
+        display: block;
+    }
+
+    section {
+        padding: 10px;
+    }
 }
