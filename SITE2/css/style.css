@@ -170,3 +170,25 @@ footer a:hover {
     background: url(/SITE2/images/rca-hover.png);
     transition: background-image 2000ms;
 }
+
+/* tamanhos de telas */
+
+@media (max-width: 991px){
+    body {
+        background-image: url(/SITE2/images/fundo-mobile.png);
+        background-attachment: scroll;
+        padding-top: 450px;
+    }
+}
+
+@media(max-width: 760px) {
+    header a {
+        display: block;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+}
