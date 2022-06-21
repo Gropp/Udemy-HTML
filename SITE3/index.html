@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <title>projeto site responsivo</title>
+</head>
+<body>
+    <!-- divisao cabeçalho -->
+    <header class="fundoVerdeFloresta limpa">
+        <div class="conteudo">
+            <!-- divide a tela em 3 partes de 4 pedacos -->
+            <!-- BOTAO BUSCA -->
+            <div class="caixa-g-4">
+                <form name="busca" method="post" class="formularioBusca">
+                    <input type="search" name="s" placeholder="digite o que procura!">
+                    <input type="submit" class="botaoBusca" value="">
+                </form>
+            </div>
+            <!-- LOGOTIPO -->
+            <div class="caixa-g-4">
+                <div class="logo">
+                    <a href="./" title="DESIGN RESPONSIVO">
+                        <img src="/SITE3/imagens/logo.png" alt="CURSO RESPONSIVO">
+                    </a>
+                </div>
+            </div>
+            <!-- MENU -->
+            <div class="caixa-g-4">
+                <div class="caixa">
+                    <nav>
+                        <div class="botaoMenu">
+                            <ul>
+                                <li><a href="./">Home</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#galeria" title="Galeria">Galeria</a></li>
+                                        <li><a href="#castracao" title="Castração">Castração</a></li>
+                                        <li><a href="#denuncie" title="Denuncie">Denuncie</a></li>
+                                        <li><a href="#conselhos" title="Conselhos">Conselhos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" title="Redes Sociais">Redes Sociais</a>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- adicionar o slide -->
+    <section class="fundoVerde limpa">
+        <div class="conteudo galeria">
+            <h1>Quer adotar um cão ou um gato?</h1>
+            <p>Se você deseja ter um amiguinho fiel, companheiro e leal, não precisa pagar por um, pois um amigo cuida e respeita. Amigo não tem raça, não tem pedigree. Então, procure um cão ou um gato para adotar aqui.</p>
+
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria1.jpg" 
+                title="Galeria 1"
+                data-caption="Amiguinho 1">
+                <img src="uploads/galeria1.jpg" alt="Galeria 1" title="Galeria 1"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria2.jpg" 
+                title="Galeria 2"
+                data-caption="Amiguinho 2">
+                <img src="uploads/galeria2.jpg" alt="Galeria 2" title="Galeria 2"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria3.jpg" 
+                title="Galeria 3"
+                data-caption="Amiguinho 3">
+                <img src="uploads/galeria3.jpg" alt="Galeria 3" title="Galeria 3"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria4.jpg" 
+                title="Galeria 4"
+                data-caption="Amiguinho 4">
+                <img src="uploads/galeria4.jpg" alt="Galeria 4" title="Galeria 4"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria5.jpg" 
+                title="Galeria 5"
+                data-caption="Amiguinho 5">
+                <img src="uploads/galeria5.jpg" alt="Galeria 5" title="Galeria 5"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria6.jpg" 
+                title="Galeria 6"
+                data-caption="Amiguinho 6">
+                <img src="uploads/galeria6.jpg" alt="Galeria 6" title="Galeria 6"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria7.jpg" 
+                title="Galeria 7"
+                data-caption="Amiguinho 7">
+                <img src="uploads/galeria7.jpg" alt="Galeria 7" title="Galeria 7"></a>
+            </div>
+            <div class="caixa-g-3 caixa-m-6">
+                <a data-fancybox="gallery" 
+                data-src="uploads/galeria8.jpg" 
+                title="Galeria 8"
+                data-caption="Amiguinho 8">
+                <img src="uploads/galeria8.jpg" alt="Galeria 8" title="Galeria 8"></a>
+            </div>    
+        </div>
+    </section>
+    <script type="text/javascript" src="/SITE3/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="/SITE3/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+</body>
+</html>
