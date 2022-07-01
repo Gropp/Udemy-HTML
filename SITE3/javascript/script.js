@@ -38,5 +38,15 @@ $(function() {
     Fancybox.bind('[data-fancybox="gallery"]', {
         infinite: false,
         zoom: true,
-    });    
+    });
+
+    //fazer o botao voltar topo aparecer somente qdo o site rolar para baixo
+    $(document).scroll(function(){
+        if($(this).scrollTop() > 500) {
+            //mostra o botao depois de descer 500px
+            document.getElementById("voltarTopo").style.display = "block";
+        } else {
+            document.getElementById("voltarTopo").style.display = "none";
+        }
+    });
 });

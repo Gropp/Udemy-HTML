@@ -491,3 +491,13 @@ footer ul li a:hover {
 .numero span {
     font-size: 4em;
 }
+
+.voltarTopo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 47px;
+    height: 47px;
+    background-image: url(/imagens/voltarTopo.png);
+    display: none;
+}
