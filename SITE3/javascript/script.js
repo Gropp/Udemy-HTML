@@ -18,6 +18,15 @@ $(function() {
         $('nav ul').animate({'left':'-100%'},300);
     });
 
+    //transicao dos menus por id
+    var $doc = $('html, body');
+        $('.scrollSuave').click(function(){
+            $doc.animate ({
+                scrollTop:$($.attr(this,'href')).offset().top
+            }, 1000);
+            return false;
+        });
+
     // banner
     $('#slideshow-banner').slide({
         cdTime : 5000, // in ms
