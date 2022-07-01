@@ -309,6 +309,7 @@ table tfoot {
     font-size: 0.7em;
     font-weight: lighter;
     background: #009b4e;
+    margin: 20px;
 }
 
 .conselhos {
@@ -351,4 +352,102 @@ table tfoot {
     font-size: 16px;
     font-style: italic;
     margin-bottom: 0;
+}
+
+.icones {
+    float: left;
+    width: 28px;
+    height: 26px;
+    background-image: url(/imagens/icones.png);
+}
+
+.iconeFacebook {
+    background-position: 0px 0px;
+}
+
+.iconeYouTube {
+    background-position: 28px 0;
+}
+
+.iconeTwitter {
+    background-position: 112px 0;
+}
+
+.iconeHome {
+    background-position: 140px 26px;
+}
+
+.iconeHost {
+    background-position: 110px 26px;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+footer h4 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 1px solid#008040;
+}
+
+footer ul {
+    text-indent: 10px;
+}
+
+footer ul li {
+    text-align: left;
+    height: 40px;
+}
+
+footer ul li a {
+    color: #3c3;
+}
+
+footer ul li a:hover {
+    color: #9f9;
+    text-decoration: underline;
+}
+
+.campoNewsLetter {
+    padding: 5px;
+    background: #3c3;
+    border: 1px solid #006600;
+}
+
+.numero {
+    color: #228b22;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background: #9f9;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    transform: rotate(50deg);
+    animation: numero 10s infinite;
+}
+
+@keyframes numero {
+    0% {
+        color:green;
+    }
+    25% {
+        color: yellow;
+    }
+    75% {
+        color:red;
+    }
+}
+
+.numero p{
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.numero span {
+    font-size: 4em;
 }
