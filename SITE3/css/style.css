@@ -129,6 +129,7 @@ nav ul {
     background-color: #029830;
     overflow: hidden;
     overflow-y: auto;
+    z-index: 1;
 }
 
 nav ul li {
@@ -164,6 +165,11 @@ nav ul li ul li a:hover {
     background-color: #030;
 }
 
+.slide {
+    position: relative;
+    min-height: 450px;
+    
+}
 .galeria div {
     padding: 2px;
 }
@@ -182,6 +188,40 @@ nav ul li ul li a:hover {
 .galeria img:hover {
     filter: grayscale(0%);
     transition: all 1s ease;
+}
+
+.botao {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border: 1px solid;
+    cursor: pointer;
+    color: #9f9;
+}
+
+.botaoPequeno {
+    font-size: 0.7em;
+    padding: 3px 8px;
+}
+
+.botaoMedio {
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.botaoGrande {
+    font-size: 1.1em;
+    padding: 7px 12px;
+}
+
+.botaoVerde {
+    background-color: #00a753;
+    border-color: #006600;
+    
+}
+
+.botaoVerde:hover {
+    background-color: #00c161;
 }
 
 .estatisticas {
@@ -433,13 +473,13 @@ footer ul li a:hover {
 
 @keyframes numero {
     0% {
-        color:green;
+        color: #228B22;
     }
     25% {
-        color: yellow;
+        color: #00c161;
     }
     75% {
-        color:red;
+        color: #00f400;
     }
 }
 

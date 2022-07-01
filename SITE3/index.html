@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
@@ -65,6 +66,21 @@
         </div>
     </header>
     <!-- adicionar o slide -->
+    <div class="slide limpa">
+        <div id="slideshow-banner">
+            <ul>
+                <li class="slideshow-item">
+                    <img src="/uploads/slide1.jpg" alt="Slide" title="Slide">
+                </li>
+                <li class="slideshow-item">
+                    <img src="/uploads/slide2.jpg" alt="Slide" title="Slide">
+                </li>
+                <li class="slideshow-item">
+                    <img src="/uploads/slide3.jpg" alt="Slide" title="Slide">
+                </li>
+            </ul>
+        </div>    
+    </div>
     <section class="fundoVerde limpa">
         <div class="conteudo galeria">
             <h1>Quer adotar um cão ou um gato?</h1>
@@ -125,7 +141,8 @@
                 title="Galeria 8"
                 data-caption="Amiguinho 8">
                 <img src="uploads/galeria8.jpg" alt="Galeria 8" title="Galeria 8"></a>
-            </div>    
+            </div>
+            <a href="#" class="botao botaoVerde botaoGrande">Adotar um amigo fiel</a> 
         </div>
     </section>
     <!-- estatisticas de nascimentos -->
@@ -314,7 +331,7 @@
                     <p>Faça parte de nossa lista de e-mails e receba nossas atualizações</p>
                     <form name="newsletter" method="post">
                         <input type="email" name="email" class="campoNewsLetter" title="email">
-                        <input type="submit" value="Enviar" name="enviar">
+                        <input type="submit" value="Enviar" name="enviar" class="botao botaoMedio botaoVerde">
                     </form>
                 </div>
             </article>
@@ -330,8 +347,9 @@
             </article>
         </footer>
     </div>
-    <script type="text/javascript" src="/SITE3/javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="/SITE3/javascript/script.js"></script>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <script type="text/javascript" src="javascript/jquery.slide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
