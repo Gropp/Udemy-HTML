@@ -10,6 +10,23 @@
         background-color: coral;
     } */
 
+    /* ajuste do layout de acordo com a resolucao da tela */
+    @media screen and(max-width: 1024px){
+        .conteudo {
+            width: 95%;
+        }
+    }
+    
+    @media screen and(max-width: 480px){
+        .conteudo {
+            width: 100%;
+        }
+        
+        .caixa {
+            margin: 5px;
+        }
+    }
+
 /* limpa DOM */
 .limpa {
     clear: both;

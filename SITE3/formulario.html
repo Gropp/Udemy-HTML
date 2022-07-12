@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Formulário</title>
 </head>
 <body>
@@ -14,100 +16,106 @@
             <label for="nome">Nome
                 <input type="text" name="nome" id="nome" placeholder="digite seu nome" maxlength="30" autofocus tabindex="1" required>
             </label>
-            Senha
-            <input type="password" name="senha" id="" tabindex="2" required>
-            E-mail
-            <input type="email" name="email" id="" tabindex="3" required>
-            
-            <fieldset>
-                <legend>Cadastro</legend>
-            
-                <label for="url">Url
-                    <input type="url" name="url" id="" tabindex="4">
+            <label for="senha">Senha
+            <input type="password" name="senha" id="" tabindex="2" placeholder="senha" pattern=".{6,12}" required>
+            </label>
+            <label for="email">E-mail
+            <input type="email" name="email" id="" tabindex="3" placeholder="e-mail" required>
+            </label>
+        </fieldset>    
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="url">Url
+                <input type="url" name="url" id="" tabindex="4">
+            </label>
+            <label for="cep">CEP
+                <input type="text" name="cep" id="" pattern="[0-9]{5}[\-]?[0-9]{3}" tabindex="5">
+            </label>
+            <label for="data">Data Nascimento
+                <input type="date" name="data" id="" tabindex="6" required>
+            </label>
+            <label>Sexo: 
+                <label for="sexo">Masculino
+                    <input type="radio" name="sexo" id="">
                 </label>
-                <label for="data">Data Nascimento
-                    <input type="date" name="data" id="" tabindex="5" required>
+                <label for="sexo">Feminino
+                    <input type="radio" name="sexo" id="">
+                </label>    
+            </label>   
+            <label>Regras: 
+                <label>Concordo
+                    <input type="checkbox" name="concordo" id="" checked>
                 </label>
-                <label>Sexo: 
-                    <label for="sexo">Masculino
-                        <input type="radio" name="sexo" id="">
-                    </label>
-                    <label for="sexo">Feminino
-                        <input type="radio" name="sexo" id="">
-                    </label>    
-                </label>   
-                <label>Regras: 
-                    <label>Concordo
-                        <input type="checkbox" name="concordo" id="">
-                    </label>
-                    <label for="rule">Não Concordo
-                        <input type="checkbox" name="naoconcordo" id="">
-                    </label>    
-                </label>
-                <label>Selecione uma opção:
-                    <select name="estados" id="">
-                        <optgroup label="Sul">
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="PR" selected>Paraná</option>
-                            <option value="SC">Santa Catarina</option>
-                        </optgroup>                       
-                        <option value="SP">São Paulo</option>
-                        <option value="MG">Minas Gerais</option>
-                    </select>
-                </label>
-                <label>Data List
-                    <input type="text" name="estados2" list="listaEstados" id="">
-                    <datalist id="listaEstados">
-                        <option label="MT" value="Mato Grosso"></option>
-                        <option label="MS" value="Mato Grosso do Sul"></option>
-                        <option label="RJ" value="Rio de Janeiro"></option>
-                        <option label="ES" value="Espirito Santo"></option>
-                        <option label="MG" value="Minas Gerais"></option>
-                    </datalist>
-                </label>
-                <label for="mensagem">Mensagem
-                    <textarea nome="mensagem"></textarea>
-                </label>
-                <label for="arquivo"> ESCOLHA UM ARQUIVO
-                    <input type="file" name="arquivo" accept="image/" id="">
-                </label>
-                <label for="arquivos"> ESCOLHA VARIOS ARQUIVOS
-                    <input type=file multiple name="arquivos" accept="image/" id="">
-                </label>
-
-                <label for="numero">Número:
-                    <input type="number" min="0" max="10" step="2" value="2" name="numero" id="">
-                </label>
-
-                <label for="range">Range:
-                    <input type="range" name="range" value="10" id="">
-                </label>
-
-                <label for="cor">Color:
-                    <input type="color" name="cor" id="">
-                </label>
-                <label for="mes">Mês:
-                    <input type="month" name="mes" id="">
-                </label>
-                <label for="hora">Hora:
-                    <input type="time" name="hora" id="">
-                </label>
-                <label for="local">Data Local:
-                    <input type="datetime-local" name="local" id="">
-                </label>
-                <label for="barra">Barra de Progresso
-                    <meter min="0" max="100" low="25" value="30"></meter>
-                </label>
-                <progress max="100" value="60"></progress>
-                <input type="hidden" name="omite" id="idUsuario">
-            </fieldset>    
+                <label for="rule">Não Concordo
+                    <input type="checkbox" name="naoconcordo" id="">
+                </label>    
+            </label>
+            <label>Selecione uma opção:
+                <select name="estados" id="">
+                    <optgroup label="Sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR" selected>Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>                       
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </label>
+            <label>Data List
+                <input type="text" name="estados2" list="listaEstados" id="">
+                <datalist id="listaEstados">
+                    <option label="MT" value="Mato Grosso"></option>
+                    <option label="MS" value="Mato Grosso do Sul"></option>
+                    <option label="RJ" value="Rio de Janeiro"></option>
+                    <option label="ES" value="Espirito Santo"></option>
+                    <option label="MG" value="Minas Gerais"></option>
+                </datalist>
+            </label>
+            <label for="mensagem">Mensagem
+                <textarea nome="mensagem"></textarea>
+            </label>
+            <label for="arquivo"> ESCOLHA UM ARQUIVO
+                <input type="file" name="arquivo" accept="image/" id="">
+            </label>
+            <label for="arquivos"> ESCOLHA VARIOS ARQUIVOS
+                <input type=file multiple name="arquivos" accept="image/" id="">
+            </label>
+            <label for="numero">Número:
+                <input type="number" min="0" max="10" step="2" value="2" name="numero" id="">
+            </label>
+            <label for="range">Range:
+                <input type="range" name="range" value="10" id="">
+            </label>
+            <label for="cor">Color:
+                <input type="color" name="cor" id="">
+            </label>
+            <label for="mes">Mês:
+                <input type="month" name="mes" id="">
+            </label>
+            <label for="semana">Semana:
+                <input type="week" name="semana" id="">
+            </label>
+            <label for="hora">Hora:
+                <input type="time" name="hora" id="">
+            </label>
+            <label for="local">Data Local:
+                <input type="datetime-local" name="local" id="">
+            </label>
         </fieldset>
         <fieldset>
+            <legend>Progresso</legend>
+            <label for="barra">Barra de Meter
+                <meter min="0" max="100" low="25" value="30"></meter>
+            </label>Barra de Progresso
+            <progress max="100" value="60"></progress>
+            <input type="hidden" name="omite" id="idUsuario">
+        </fieldset>    
+        <fieldset>
+            <legend>Submit</legend>
             <input type="submit" name="" id="" value="Enviar Formularios"> 
-            <input type="reset" name="" id="" value="Limpar Formularios"> 
+            <input type="reset" name="" id="" value="Limpar Formularios">
+            <button value="button" class="botao botaoVerde botaoMedio" >Enviar</button>
         </fieldset>
-
-        
     </form>
 </body>
 </html>

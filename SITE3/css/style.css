@@ -501,3 +501,80 @@ footer ul li a:hover {
     background-image: url(/imagens/voltarTopo.png);
     display: none;
 }
+
+strong  {
+    color: #262626;
+}
+    
+pre, .info {
+    font-size: smaller;
+}
+    
+.info {
+    list-style: none;
+    display: inline;
+}
+
+.info:before {
+    content: "NB: ";
+    display: inline;
+    float: left;
+    margin-right: .5em;
+}
+
+@media (min-width: 1024px) and (max-width: 1380px) {
+    .destaque h2 {
+        font-size: 3em;
+    }
+    
+    .destaque h3 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 960px){
+    .formularioBusca {
+        width: 100%;
+        margin-top: -20px;
+    }
+    
+    .slide {
+        min-height: 300px;
+    }
+
+    #slideshow-banner ul .slideshow-item {
+        height: 300px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+    .galeria img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px){
+    .logo {
+        width: 200px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .estatisticas li {
+        display: block;
+    }
+
+    .estatisticas p:first-child {
+        font-size: 3em;
+    }
+
+    .slide {
+        min-height: 200px;
+    }
+
+    #slideshow-banner ul .slideshow-item {
+        height: 200px;
+    }
+}

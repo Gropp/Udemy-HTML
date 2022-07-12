@@ -1,0 +1,52 @@
+body {
+    background: green;
+    color: #9f9;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+::placeholder {
+    font-style: italic;
+    opacity: .5;
+}
+
+fieldset {
+    border: 1px solid #269526;
+    padding: 10px;
+    margin: 10px;
+}
+
+legend {
+    margin: 15px;
+}
+
+label {
+    text-align: left;
+    display: block;
+}
+
+input, select, textarea {
+    color: #007138;
+    text-align: left;
+    width: 95%;
+    padding: 15px;
+    background-color: #83e083;
+    border: 2px solid #060;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+meter, progress {
+    margin: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 10%;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+}

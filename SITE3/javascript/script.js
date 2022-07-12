@@ -49,4 +49,22 @@ $(function() {
             document.getElementById("voltarTopo").style.display = "none";
         }
     });
+
+    $(document).ready(function() {
+        $(".fancyboxIframe").fancybox({
+            maxWidth	: 1300,
+            maxHeight	: 800,
+            fitToView	: false,
+            width		: '95%',
+            height		: '95%',
+            autoSize	: false,
+            closeClick	: false,
+            openEffect	: 'fade',
+            closeEffect	: 'none',
+        iframe: {
+            scrolling : 'auto',
+            preload   : true
+        }
+        }).trigger('click');
+    });
 });
