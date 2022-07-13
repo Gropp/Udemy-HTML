@@ -1,4 +1,10 @@
 // SINTAXE JQUERY $
+
+// $(window).on('load',function(){
+//     document.getElementById("carregando").style.display="none";
+//     document.getElementById("corpo").style.display="block";
+// });
+
 $(function() {
 
     // menu
@@ -16,6 +22,11 @@ $(function() {
     $('body').on('click',function(){
         $('.botaoMenu').removeClass('menuAtivo');
         $('nav ul').animate({'left':'-100%'},300);
+    });
+
+    $('.linkMenu').on('click', function (){
+        $('.botaoMenu').removeClass('menuAtivo');
+        $('nav ul').animate({'left':'-100%'}, 300);
     });
 
     //transicao dos menus por id
@@ -50,21 +61,9 @@ $(function() {
         }
     });
 
-    $(document).ready(function() {
-        $(".fancyboxIframe").fancybox({
-            maxWidth	: 1300,
-            maxHeight	: 800,
-            fitToView	: false,
-            width		: '95%',
-            height		: '95%',
-            autoSize	: false,
-            closeClick	: false,
-            openEffect	: 'fade',
-            closeEffect	: 'none',
-        iframe: {
-            scrolling : 'auto',
-            preload   : true
-        }
-        }).trigger('click');
-    });
+    var intervalo = setInterval(function(){
+        clearInterval(intervalo);
+        document.getElementById("carregando").style.display="none";
+        document.getElementById("corpo").style.display="block";
+    }, 3000 );
 });
